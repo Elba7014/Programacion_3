@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
 
         public void procesar(View vista){
             try {
-                RadioGroup optOperaciones = (RadioGroup) findViewById(R.id.optOperaciones);
+            //    RadioGroup optOperaciones = (RadioGroup) findViewById(R.id.optOperaciones);
                 Spinner cboOperaciones = (Spinner)findViewById(R.id.cboOperaciones);
 
                 TextView tempVal = (TextView) findViewById(R.id.txtnum1);
@@ -45,35 +45,35 @@ public class MainActivity extends Activity {
 
                 double respuesta = 0;
                 //Este es para el radiogroup y los radiobuttons
-                switch (optOperaciones.getCheckedRadioButtonId()) {
-                    case R.id.optSuma:
-                        respuesta = num1 + num2;
-                        break;
-                    case R.id.optResta:
-                        respuesta = num1 - num2;
-                        break;
-                    case R.id.optMultiplicar:
-                        respuesta = num1 * num2;
-                        break;
-                    case R.id.optExponenciacion:
-                        respuesta = Math.pow(num1,num2) ;
-                        break;
-                    case R.id.optPorcentaje:
-                        respuesta = num1 * num2 / 100;
-                        break;
-                    case R.id.optModulo:
-                        respuesta = num1 % num2;
-                        break;
-                    case R.id.optFactoreo:
-                        double factor = 1;
-                        while ( num1!=0 ) {
-                            factor = factor * num1;
-                            num1 --;
-                            System.out.println(factor);
-                            respuesta = num1;
-                            break;
-                    }
-                }
+             //   switch (optOperaciones.getCheckedRadioButtonId()) {
+             //       case R.id.optSuma:
+                //        respuesta = num1 + num2;
+                   //     break;
+                 //   case R.id.optResta:
+             //           respuesta = num1 - num2;
+               //         break;
+                 //   case R.id.optMultiplicar:
+                   //     respuesta = num1 * num2;
+                     //   break;
+//                    case R.id.optExponenciacion:
+  //                      respuesta = Math.pow(num1,num2) ;
+    //                    break;
+      //              case R.id.optPorcentaje:
+        //                respuesta = num1 * num2 / 100;
+          //              break;
+            //        case R.id.optModulo:
+              //          respuesta = num1 % num2;
+                //        break;
+                  //  case R.id.optFactoreo:
+            //            double factor = 1;
+              //          while ( num1!=0 ) {
+                //            factor = factor * num1;
+                  //          num1 --;
+                    //        System.out.println(factor);
+                      //      respuesta = num1;
+                        //    break;
+                    //}
+               // }
                 //Este es para el spinner... -> Combobox.
                 switch (cboOperaciones.getSelectedItemPosition()){
                     case 1: //suma

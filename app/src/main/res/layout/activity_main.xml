@@ -4,27 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
+    android:background="@drawable/fondo2"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btnprocesar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="210dp"
-        android:layout_marginTop="290dp"
-        android:background="#1693A3"
+        android:layout_width="131dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/boton"
         android:onClick="procesar"
-        android:text="@string/boton" />
+        android:text="@string/boton"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/lblnum1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="14dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="120dp"
         android:background="#00F4EBEB"
         android:text="@string/num1"
+        android:textColor="#FFFFFF"
         android:textSize="20sp" />
 
     <TextView
@@ -32,9 +34,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="14dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:background="#00F3EBEB"
         android:text="@string/num1"
+        android:textColor="#FFFFFF"
         android:textSize="20sp" />
 
     <EditText
@@ -42,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="140dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:inputType="number" />
 
@@ -51,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="140dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="120dp"
         android:ems="10"
         android:inputType="number" />
 
@@ -59,65 +62,84 @@
         android:id="@+id/lblresp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="170dp"
-        android:layout_marginTop="240dp"
-        android:text="Procesar..." />
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="210dp"
+        android:text="Procesar..."
+        android:textColor="#FFFFFF" />
 
-    <RadioGroup
+   <RadioGroup
         android:id="@+id/optOperaciones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="240dp">
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="190dp">
 
         <RadioButton
             android:id="@+id/optSuma"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="Suma" />
+            android:text="Suma"
+            android:textColor="#FFFFFF" />
 
         <RadioButton
             android:id="@+id/optResta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Resta" />
+            android:text="Resta"
+            android:textColor="#FFFFFF" />
 
         <RadioButton
             android:id="@+id/optMultiplicar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Multiplicacion" />
+            android:text="Multiplicacion"
+            android:textColor="#FFFFFF" />
 
         <RadioButton
             android:id="@+id/optDivision"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Division" />
+            android:text="Division"
+            android:textColor="#FFFFFF" />
+
+
+    </RadioGroup>
+   <RadioGroup
+        android:id="@+id/optOperacione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="190dp">
 
         <RadioButton
             android:id="@+id/optExponenciacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Exponenciacion" />
+            android:text="Exponenciacion"
+            android:textColor="#FFFFFF" />
 
         <RadioButton
             android:id="@+id/optPorcentaje"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Porcentaje" />
+            android:text="Porcentaje"
+            android:textColor="#FFFFFF" />
 
         <RadioButton
             android:id="@+id/optModulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Modulo" />
+            android:text="Modulo"
+            android:textColor="#FFFFFF" />
 
         <RadioButton
             android:id="@+id/optFactoreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Factoreo " />
+            android:text="Factoreo "
+            android:textColor="#FFFFFF" />
+
     </RadioGroup>
 
     <Spinner
@@ -125,7 +147,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="14dp"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="160dp"
         android:entries="@array/operaciones" />
 
 </RelativeLayout>

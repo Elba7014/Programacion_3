@@ -13,4 +13,11 @@
         <item>Exponenciacion</item>
         <item>Factoreo</item>
     </string-array>
+
+    //controles basicos
+        <string name="titulo">CONTROLES BASICO</string>
+        <string name="nombre">Escriba su nombre</string>
+        <string name="apellido">Escriba su apellido</string>
+        <string name="enviarDatos">ENVIAR DATOS</string>
+
 </resources>
