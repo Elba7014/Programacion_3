@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnprocesar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="290dp"
+        android:background="#1693A3"
+        android:onClick="procesar"
+        android:text="@string/boton" />
+
+    <TextView
+        android:id="@+id/lblnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="150dp"
+        android:background="#00F4EBEB"
+        android:text="@string/num1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblnum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="80dp"
+        android:background="#00F3EBEB"
+        android:text="@string/num1"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtnum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="130dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/lblresp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="240dp"
+        android:text="Procesar..." />
+
+    <RadioGroup
+        android:id="@+id/optOperaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="240dp">
+
+        <RadioButton
+            android:id="@+id/optSuma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Suma" />
+
+        <RadioButton
+            android:id="@+id/optResta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resta" />
+
+        <RadioButton
+            android:id="@+id/optMultiplicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiplicacion" />
+
+        <RadioButton
+            android:id="@+id/optDivision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Division" />
+
+        <RadioButton
+            android:id="@+id/optExponenciacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exponenciacion" />
+
+        <RadioButton
+            android:id="@+id/optPorcentaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Porcentaje" />
+
+        <RadioButton
+            android:id="@+id/optModulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modulo" />
+
+        <RadioButton
+            android:id="@+id/optFactoreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Factoreo " />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/cboOperaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="210dp"
+        android:entries="@array/operaciones" />
+
+</RelativeLayout>
